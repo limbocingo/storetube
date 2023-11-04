@@ -41,8 +41,10 @@ def download_video(url: str, path: str, format: str) -> str:
     except pytube.exceptions.AgeRestrictedError:
         return 'This video has age restriction.'
 
-    path = stream.download(output_path=path, filename=video.title +
-                    '.mp3' if format != 'v' else video.title + '.mp4')
+    out = stream.download(output_path=path)
+    
+    if format == 'a':
+        os.rename(out, out[:-3] + 'mp3')
 
     return
 
