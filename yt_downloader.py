@@ -41,7 +41,7 @@ def download_video(url: str, path: str, format: str) -> str:
         stream = video.streams.filter(only_audio=True).first()
 
     path = stream.download(output_path=path, filename=video.title +
-                    '.mp3' if format != 'v' else '.mp4')
+                    '.mp3' if format != 'v' else video.title + '.mp4')
 
     return
 
