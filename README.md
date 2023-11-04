@@ -1,5 +1,4 @@
-![imagen](https://github.com/limbocingo/yt-downloader/assets/71130071/b3592221-1f4d-4e3a-bc73-5c5eb85a35ef)
-
+![output-onlinetools](https://github.com/limbocingo/yt-downloader/assets/71130071/b5c23fd6-f741-4561-8ba3-994a22a0d7ba)
 
 # YouTube Downloader
 Download YouTube videos fast, easy and simple.
