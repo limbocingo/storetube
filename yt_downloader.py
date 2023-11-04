@@ -30,15 +30,16 @@ def download_video(url: str, path: str, format: str) -> str:
 
     except pytube.exceptions.RegexMatchError:
         return 'Unknown video.'
+    
+    try:
+        if format == 'v':
+            stream = video.streams.get_by_resolution(resolution='720p')
+
+        elif format == 'a':
+            stream = video.streams.filter(only_audio=True).first()
 
     except pytube.exceptions.AgeRestrictedError:
         return 'This video has age restriction.'
-
-    if format == 'v':
-        stream = video.streams.get_by_resolution(resolution='720p')
-
-    elif format == 'a':
-        stream = video.streams.filter(only_audio=True).first()
 
     path = stream.download(output_path=path, filename=video.title +
                     '.mp3' if format != 'v' else video.title + '.mp4')
