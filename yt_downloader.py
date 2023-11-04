@@ -31,7 +31,7 @@ def download_video(url: str, path: str, format: str) -> str:
     except pytube.exceptions.RegexMatchError:
         return 'Unknown video.'
 
-    if video.age_restricted:
+    except pytube.exceptions.AgeRestrictedError:
         return 'This video has age restriction.'
 
     if format == 'v':
