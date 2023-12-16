@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/limbocingo/yt-downloader/assets/71130071/b5c23fd6-f741-4561-8ba3-994a22a0d7ba">
+  <img src="https://github.com/limbocingo/storetube/assets/71130071/c35ef8f3-b40c-4b12-926b-b58391526691">
 </p>
 
 # StoreTube
