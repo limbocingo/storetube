@@ -5,5 +5,5 @@
 # StoreTube
 Download videos or the audio of the same by only pasting in the URL and selecting the format.
 
-# How to use it?
+## How to use it?
 Download the newest package and you're good to go.
